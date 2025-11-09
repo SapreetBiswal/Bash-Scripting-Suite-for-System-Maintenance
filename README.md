@@ -1,6 +1,3 @@
-Here's your professional README.md file without the embedded code:
-
-markdown
 # Bash Scripting Suite for System Maintenance
 
 A comprehensive suite of Bash scripts designed to automate common system maintenance tasks including backup, system updates, and log monitoring through an interactive menu-driven interface.
@@ -38,13 +35,11 @@ This project aims to streamline system administration by providing an automated 
 
 ## Project Structure
 
-
-.
-├── main_1.sh              # Main menu script (entry point)
-├── backup_1.sh            # Backup script
-├── maintenance.sh         # System update and cleanup script
-├── log_monitor_1.sh       # Log monitoring script
-└── maintenance_suite.log  # Central log file (auto-generated)
+─ main_1.sh              # Main menu script (entry point)
+─ backup_1.sh            # Backup script
+─ maintenance.sh         # System update and cleanup script
+─ log_monitor_1.sh       # Log monitoring script
+─ maintenance_suite.log  # Central log file (auto-generated)
 
 
 ## Prerequisites
