@@ -35,11 +35,11 @@ This project aims to streamline system administration by providing an automated 
 
 ## Project Structure
 
-─ main_1.sh              # Main menu script (entry point)
-─ backup_1.sh            # Backup script
-─ maintenance.sh         # System update and cleanup script
-─ log_monitor_1.sh       # Log monitoring script
-─ maintenance_suite.log  # Central log file (auto-generated)
+- main_1.sh              # Main menu script (entry point)
+- backup_1.sh            # Backup script
+- maintenance.sh         # System update and cleanup script
+- log_monitor_1.sh       # Log monitoring script
+- maintenance_suite.log  # Central log file (auto-generated)
 
 
 ## Prerequisites
