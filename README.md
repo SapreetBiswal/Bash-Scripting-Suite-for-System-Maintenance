@@ -44,15 +44,11 @@ This project aims to **streamline system administration** by automating routine 
 
 ## 📁 Project Structure
 
-
-
-├── main_1.sh              # Main menu script (entry point)
-├── backup_1.sh            # Backup script
-├── maintenance.sh         # System update and cleanup script
-├── log_monitor_1.sh       # Log monitoring script
-└── maintenance_suite.log  # Central log file (auto-generated)
-
-`
+├── main_1.sh              # Main menu script (entry point)<br />
+├── backup_1.sh            # Backup script<br />
+├── maintenance.sh         # System update and cleanup script<br />
+├── log_monitor_1.sh       # Log monitoring script<br />
+└── maintenance_suite.log  # Central log file (auto-generated)<br />
 
 ---
 
@@ -69,16 +65,16 @@ This project aims to **streamline system administration** by automating routine 
 
 1. **Clone this repository:**
 
-   bash
+```bash
    git clone https://github.com/yourusername/bash-maintenance-suite.git
    cd bash-maintenance-suite
-`
+```
 
 2. **Make all scripts executable:**
 
-   bash
+```bash
    chmod +x main_1.sh backup_1.sh maintenance.sh log_monitor_1.sh
-   
+```
 
 3. **(Optional)** Ensure all scripts are in the same directory, or update the paths in `main_1.sh` accordingly.
 
