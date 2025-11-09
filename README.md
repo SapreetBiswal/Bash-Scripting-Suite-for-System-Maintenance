@@ -84,9 +84,9 @@ This project aims to **streamline system administration** by automating routine 
 
 Run the main script to access the interactive menu:
 
-bash
+```bash
 ./main_1.sh
-
+```
 
 ### Menu Options
 
