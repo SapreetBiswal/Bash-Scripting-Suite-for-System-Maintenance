@@ -44,11 +44,11 @@ This project aims to **streamline system administration** by automating routine 
 
 ## 📁 Project Structure
 
-├── main_1.sh              # Main menu script (entry point)<br />
-├── backup_1.sh            # Backup script<br />
-├── maintenance.sh         # System update and cleanup script<br />
-├── log_monitor_1.sh       # Log monitoring script<br />
-└── maintenance_suite.log  # Central log file (auto-generated)<br />
+├── `main_1.sh`              # Main menu script (entry point)<br />
+├── `backup_1.sh`            # Backup script<br />
+├── `maintenance.sh`         # System update and cleanup script<br />
+├── `log_monitor_1.sh`       # Log monitoring script<br />
+└── `maintenance_suite.log`  # Central log file (auto-generated)<br />
 
 ---
 
