@@ -1,2 +1,130 @@
-# Bash-Scripting-Suite-for-System-Maintenance
-This Bash script is my System Maintenance Menu, which helps me easily handle different system tasks from one place. It lets me run a backup, perform system updates and cleaning, and check logs for errors using separate scripts. It keeps everything organized and simple to use.
+# Bash Scripting Suite for System Maintenance
+
+A comprehensive suite of Bash scripts designed to automate common system maintenance tasks including backup, system updates, and log monitoring through an interactive menu-driven interface.
+
+## Objective
+
+This project aims to streamline system administration by providing an automated solution for routine maintenance tasks such as:
+- System backups
+- System updates and cleanup
+- Log file monitoring
+
+## Features
+
+- *Interactive Menu Interface*: User-friendly command-line menu for easy navigation
+- *Centralized Logging*: All operations are logged to maintenance_suite.log with timestamps
+- *Modular Design*: Separate scripts for each maintenance task
+- *Real-time Output*: Uses tee to display output while logging simultaneously
+- *Error Handling*: Proper input validation and error messages
+
+## Project Structure
+
+.
+├── main_1.sh # Main menu script (entry point)
+├── backup_1.sh # Backup script
+├── maintenance.sh # System update and cleanup script
+├── log_monitor_1.sh # Log monitoring script
+└── maintenance_suite.log # Central log file (auto-generated)
+
+text
+
+## Prerequisites
+
+- Linux/Unix operating system
+- Bash shell (version 4.0 or higher)
+- sudo privileges for maintenance and log monitoring operations
+- Required utilities: tar, tee, apt or yum (depending on your distribution)
+
+## Installation
+
+1. Clone this repository:
+git clone https://github.com/yourusername/bash-maintenance-suite.git
+cd bash-maintenance-suite
+
+text
+
+2. Make all scripts executable:
+chmod +x main_1.sh backup_1.sh maintenance.sh log_monitor_1.sh
+
+text
+
+3. Ensure all scripts are in the same directory, or update the paths in main_1.sh accordingly.
+
+## Usage
+
+Run the main script to access the menu:
+
+./main_1.sh
+
+text
+
+### Menu Options
+
+1. *Run System Backup*: Creates compressed backups of specified directories
+2. *Run System Maintenance*: Performs system updates and cleanup (requires sudo)
+3. *Monitor System Logs*: Scans /var/log/auth.log for "Failed" entries (requires sudo)
+4. *Exit*: Closes the suite
+
+All operations are automatically logged to maintenance_suite.log with timestamps for audit purposes.
+
+## Script Details
+
+### main_1.sh
+The main entry point that provides an interactive menu interface. It coordinates the execution of other scripts and manages centralized logging using the tee command to display output in real-time while saving to the log file.
+
+### backup_1.sh
+Handles automated backup operations. Creates timestamped compressed archives of important directories.
+
+### maintenance.sh
+Performs system maintenance tasks including:
+- Package updates
+- System upgrades
+- Cache cleanup
+- Removal of unnecessary packages
+
+### log_monitor_1.sh
+Monitors system logs (specifically /var/log/auth.log) for failed authentication attempts or other specified patterns.
+
+## Configuration
+
+Edit the configuration section in main_1.sh to customize script paths:
+
+BACKUP_SCRIPT="./backup_1.sh"
+MAINTENANCE_SCRIPT="./maintenance.sh"
+LOG_MONITOR_SCRIPT="./log_monitor_1.sh"
+LOG_FILE="maintenance_suite.log"
+
+text
+
+## Logging
+
+All script executions are logged to maintenance_suite.log with:
+- Timestamps for each operation
+- Complete output (stdout and stderr)
+- Operation identifiers
+
+View logs using:
+cat maintenance_suite.log
+
+or
+tail -f maintenance_suite.log # for real-time monitoring
+
+text
+
+## Requirements
+
+- *Disk Space*: Adequate space for backups and logs
+- *Permissions*: Sudo access for system maintenance and log monitoring
+- *Network*: Internet connection required for system updates
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+This project was developed as part of a Capstone Project for learning system administration and Bash scripting automation techniques.
