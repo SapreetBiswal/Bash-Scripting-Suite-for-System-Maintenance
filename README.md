@@ -133,12 +133,12 @@ All operations are **automatically logged** to `maintenance_suite.log` with time
 
 Edit the configuration section in `main_1.sh` to customize paths and settings:
 
-bash
+```bash
 BACKUP_SCRIPT="./backup_1.sh"
 MAINTENANCE_SCRIPT="./maintenance.sh"
 LOG_MONITOR_SCRIPT="./log_monitor_1.sh"
 LOG_FILE="maintenance_suite.log"
-
+```
 
 ---
 
@@ -152,15 +152,15 @@ All script executions are logged to `maintenance_suite.log` with:
 
 View logs using:
 
-bash
+```bash
 cat maintenance_suite.log
-
+```
 
 Or monitor logs in real-time:
 
-bash
+```bash
 tail -f maintenance_suite.log
-
+```
 
 ---
 
@@ -171,50 +171,3 @@ tail -f maintenance_suite.log
 * **Network:** Internet connection required for system updates
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-bash
-# 1. Fork the project
-# 2. Create your feature branch
-git checkout -b feature/AmazingFeature
-
-# 3. Commit your changes
-git commit -m "Add some AmazingFeature"
-
-# 4. Push to the branch
-git push origin feature/AmazingFeature
-
-# 5. Open a Pull Request
-
-
----
-
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙏 Acknowledgments
-
-Developed as part of a **Capstone Project** to learn system administration and Bash scripting automation techniques.
-
----
-
-**For questions or suggestions:**
-Please open an issue on the [GitHub repository](https://github.com/yourusername/bash-maintenance-suite/issues).
-
-
-
----
-
-✅ This version:
-- Includes *syntax-highlighted Bash blocks* (for GitHub and Markdown renderers).  
-- Is fully *copy-paste ready* for your repository as README.md.  
-- Uses modern formatting (emojis, headings, tables) to make it visually appealing and easy to navigate.
-
-Would you like me to also generate a *Table of Contents with automatic anchor links* (GitHub-style collapsible one)?
-```
