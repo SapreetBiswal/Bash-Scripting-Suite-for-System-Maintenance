@@ -44,10 +44,10 @@ This project aims to **streamline system administration** by automating routine 
 
 ## 📁 Project Structure
 
-├── `main_1.sh`              # Main menu script (entry point)<br />
-├── `backup_1.sh`            # Backup script<br />
+├── `main.sh`                # Main menu script (entry point)<br />
+├── `backup.sh`              # Backup script<br />
 ├── `maintenance.sh`         # System update and cleanup script<br />
-├── `log_monitor_1.sh`       # Log monitoring script<br />
+├── `log_monitor.sh`         # Log monitoring script<br />
 └── `maintenance_suite.log`  # Central log file (auto-generated)<br />
 
 ---
@@ -66,17 +66,17 @@ This project aims to **streamline system administration** by automating routine 
 1. **Clone this repository:**
 
 ```bash
-   git clone https://github.com/yourusername/bash-maintenance-suite.git
+   git clone https://github.com/SapreetBiswal/Bash-Scripting-Suite-for-System-Maintenance.git
    cd bash-maintenance-suite
 ```
 
 2. **Make all scripts executable:**
 
 ```bash
-   chmod +x main_1.sh backup_1.sh maintenance.sh log_monitor_1.sh
+   chmod +x main.sh backup.sh maintenance.sh log_monitor.sh
 ```
 
-3. **(Optional)** Ensure all scripts are in the same directory, or update the paths in `main_1.sh` accordingly.
+3. **(Optional)** Ensure all scripts are in the same directory, or update the paths in `main.sh` accordingly.
 
 ---
 
@@ -85,7 +85,7 @@ This project aims to **streamline system administration** by automating routine 
 Run the main script to access the interactive menu:
 
 ```bash
-./main_1.sh
+./main.sh
 ```
 
 ### Menu Options
@@ -103,13 +103,13 @@ All operations are **automatically logged** to `maintenance_suite.log` with time
 
 ## 🧠 Script Details
 
-### `main_1.sh`
+### `main.sh`
 
 * Entry point providing an **interactive menu interface**.
 * Coordinates the execution of other scripts.
 * Manages **centralized logging** with `tee` for real-time display and persistent logging.
 
-### `backup_1.sh`
+### `backup.sh`
 
 * Handles **automated backup operations**.
 * Creates **timestamped compressed archives** of important directories.
@@ -123,7 +123,7 @@ All operations are **automatically logged** to `maintenance_suite.log` with time
   * Cache cleanup
   * Removal of unnecessary packages
 
-### `log_monitor_1.sh`
+### `log_monitor.sh`
 
 * Monitors system logs (`/var/log/auth.log`) for **failed authentication attempts** or other specified patterns.
 
@@ -131,13 +131,12 @@ All operations are **automatically logged** to `maintenance_suite.log` with time
 
 ## ⚙ Configuration
 
-Edit the configuration section in `main_1.sh` to customize paths and settings:
+Edit the configuration section in `main.sh` to customize paths and settings:
 
 ```bash
-BACKUP_SCRIPT="./backup_1.sh"
+BACKUP_SCRIPT="./backup.sh"
 MAINTENANCE_SCRIPT="./maintenance.sh"
-LOG_MONITOR_SCRIPT="./log_monitor_1.sh"
-LOG_FILE="maintenance_suite.log"
+LOG_MONITOR_SCRIPT="./log_monitor.sh"
 ```
 
 ---
